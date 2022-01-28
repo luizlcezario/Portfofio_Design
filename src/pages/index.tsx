@@ -1,19 +1,19 @@
 import type { NextPage } from 'next'
-import { Container } from '../styles/styles'
+import Images from '../components/Images'
+import { Container } from '../styles/index'
 
 const Home: NextPage = () => {
 	return (
-		<>
-			<main>
-				<Container>
-					<h1>Iago Lima Pinto</h1>
-				</Container>
-			</main>
-
-			<footer>
-				<h2>made by luiz@cezario.</h2>
-			</footer>
-		</>
+		<Container className="flex">
+			<div className="flex-auto">
+				<Images />
+			</div>
+			<div className="flex-none ">
+				<h1 className="text-3xl ">Iago Lima Pinto</h1>
+				<h1>About</h1>
+				<h1>Contacts</h1>
+			</div>
+		</Container>
 	)
 }
 

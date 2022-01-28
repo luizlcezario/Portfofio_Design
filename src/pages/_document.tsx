@@ -47,7 +47,6 @@ export default class MyDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta charSet="utf-8" />
-					<title>Codes Luiz Cezario</title>
 					<meta
 						name="description"
 						content="This a simple portifolio for my projects in the github."
