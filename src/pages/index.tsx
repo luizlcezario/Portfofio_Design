@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import Images from '../components/Images'
+import Images from '../components/Imagens/Images'
 import { Container } from '../styles/index'
 
 const Home: NextPage = () => {
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
 			<div className="flex-none ">
 				<h1 className="text-3xl ">Iago Lima Pinto</h1>
 				<h1>About</h1>
-				<h1>Contacts</h1>
+				<h1>Contact me</h1>
 			</div>
 		</Container>
 	)

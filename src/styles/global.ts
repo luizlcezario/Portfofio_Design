@@ -11,4 +11,7 @@ body{
 	font-family: 'Roboto', sans-serif;
 	background: #121214;
 }
+input {
+	border: 0px !important;
+}
 `

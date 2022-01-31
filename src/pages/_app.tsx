@@ -4,6 +4,8 @@ import { ThemeProvider } from 'styled-components'
 import GlobalStyle from '../styles/global'
 import theme from '../styles/theme'
 import 'tailwindcss/tailwind.css'
+import { AuthProvider } from '../hooks/AuthContext'
+import { ToastProvider } from '../hooks/ToastContext'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 	return (
@@ -11,7 +13,11 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 			<Head>
 				<title>Iago Design</title>
 			</Head>
-			<Component {...pageProps} />
+			<AuthProvider>
+				<ToastProvider>
+					<Component {...pageProps} />
+				</ToastProvider>
+			</AuthProvider>
 			<GlobalStyle />
 		</ThemeProvider>
 	)
