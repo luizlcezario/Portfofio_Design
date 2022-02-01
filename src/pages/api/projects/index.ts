@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client'
 import { NextApiRequest, NextApiResponse } from 'next'
 import nextConnect from 'next-connect'
-import ensureAuth from '../../../utils/middlewares/ensureAth'
+import ensureAuth from '../../../backend/middlewares/ensureAth'
 
 const ProjectsRoutes = nextConnect<NextApiRequest, NextApiResponse>({
 	onError: (err, req, res: NextApiResponse) => {

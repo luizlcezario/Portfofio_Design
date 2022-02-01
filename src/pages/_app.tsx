@@ -1,11 +1,11 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { ThemeProvider } from 'styled-components'
-import GlobalStyle from '../styles/global'
-import theme from '../styles/theme'
+import GlobalStyle from '../frontEnd/styles/global'
+import theme from '../frontEnd/styles/theme'
 import 'tailwindcss/tailwind.css'
-import { AuthProvider } from '../hooks/AuthContext'
-import { ToastProvider } from '../hooks/ToastContext'
+import { AuthProvider } from '../frontEnd/hooks/AuthContext'
+import { ToastProvider } from '../frontEnd/hooks/ToastContext'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 	return (

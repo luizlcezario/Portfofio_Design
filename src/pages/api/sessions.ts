@@ -2,7 +2,7 @@
 
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { sign } from 'jsonwebtoken'
-import authConfig from '../../utils/config/auth'
+import authConfig from '../../backend/config/auth'
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
 	if (req.method === 'POST') {

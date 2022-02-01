@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
-import Images from '../components/Imagens/Images'
-import { Container } from '../styles/index'
+import Images from '../frontEnd/components/Imagens/Images'
+import { Container } from '../frontEnd/styles/index'
 
-const Home: NextPage = () => {
+const Home: NextPage = (props) => {
 	return (
 		<Container className="flex">
 			<div className="flex-auto">

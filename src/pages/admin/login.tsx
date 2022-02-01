@@ -2,13 +2,13 @@ import type { NextPage } from 'next'
 import { useCallback, useRef } from 'react'
 import { Form } from '@unform/web'
 import { FiLock, FiMail } from 'react-icons/fi'
-import Input from '../../components/Input'
-import { Container } from '../../styles/login'
+import Input from '../../frontEnd/components/Input'
+import { Container } from '../../frontEnd/styles/login'
 import * as Yup from 'yup'
 import { FormHandles } from '@unform/core'
-import { useAuth } from '../../hooks/AuthContext'
-import { useToast } from '../../hooks/ToastContext'
-import getValidationErros from '../../utils/getValidationErrors'
+import { useAuth } from '../../frontEnd/hooks/AuthContext'
+import { useToast } from '../../frontEnd/hooks/ToastContext'
+import getValidationErros from '../../frontEnd/utils/getValidationErrors'
 interface IProps {
 	email: string
 	password: string
